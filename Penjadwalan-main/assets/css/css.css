@@ -47,11 +47,11 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    text-align: center;
+    text-align: left;
 }
 
 nav.fixed-nav {
-    background-color: #333;
+    margin: 0;
     position: fixed;
     top: 0;
     width: 100%;
@@ -61,15 +61,27 @@ nav.fixed-nav {
     align-items: center;
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: transparent; /* Initial background */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.logo-branding{
+    width: 40px;
+}
+nav.fixed-nav.scrolled {
+    background-color: #000000; /* Transparent background on scroll */
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
+    justify-content: center; /* Center the navigation */
+    width: 100%; /* Ensure full width */
+    text-align: center;
 }
 
 nav ul li {
-    margin-left: 20px;
+    
     position: relative;
 }
 
@@ -78,6 +90,7 @@ nav ul li a {
     text-decoration: none;
     padding: 10px 15px;
     display: inline-block;
+    white-space: nowrap;
 }
 
 nav ul li .dropdown-content {
@@ -87,6 +100,16 @@ nav ul li .dropdown-content {
     min-width: 160px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+nav ul li .dropdown-content h2 {
+    padding: 10px;
+    margin: 0;
+    background-color: #444; /* Distinct section header color */
+    font-size: 1rem;
+    color: #fff;
 }
 
 nav ul li .dropdown-content a {
@@ -94,6 +117,7 @@ nav ul li .dropdown-content a {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    text-align: left;
 }
 
 nav ul li .dropdown-content a:hover {
@@ -106,6 +130,11 @@ nav ul li:hover .dropdown-content {
 
 nav ul li .dropbtn {
     cursor: pointer;
+    padding: 10px;
+    margin: 0;
+    background-color: #444; /* Distinct section header color */
+    font-size: 1rem;
+    color: #fff;
 }
 
 .main-content {

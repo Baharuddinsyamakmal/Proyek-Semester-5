@@ -65,18 +65,50 @@ $total_ruangan = $row['total'];
     <div class="content-wrapper">
         <header>
             <nav class="fixed-nav">
-                <div class="logo">Layanan Jasa Foto, Video, Produk</div>
+                <img class="logo-branding" src="assets/img/ith.Jpg" alt="branding">
+                <div class="logo">Layanan Jasa Foto,Video, Produk</div>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li class="dropdown">
                         <a href="javascripct:void(0)" class="dropbtn">Jasa Foto</a>
                         <div class="dropdown-content">
-                            <a href="#">Foto di Studio Kami</a>
+                            <h2>Foto Di Studio Kami</h2>
                             <a href="#">Foto di Lokasi Anda</a>
-                    <li><a href="matakuliah.php">Jasa Video</a></li>
+                            <a href="#">Jasa Pas Foto</a>
+                            <a href="#">Jasa Foto Dokumen Siswa</a>
+                            <h2>Untuk Bisnis Anda</h2>
+                            <a href="#">Jasa Foto Makanan</a>
+                            <a href="#">Jasa Foto Company Profile</a>
+                            <a href="#">Jasa Foto Produk</a>
+                            <a href="#">Jasa Foto Makanan</a>
+                            <h2>Untuk Anda & Keluarga</h2>
+                            <a href="#">Jasa Foto Keluarga</a>
+                            <a href="#">Jasa Foto Couple</a>
+                            <a href="#">Jasa Foto Prewedding</a>
+                            <h2>Dokumentasi Acara</h2>
+                            <a href="#">Jasa Dokumentasi Pernikahan</a>
+                            <a href="#">Jasa Dokumentasi Event/Seminar</a>
+                            <a href="#">Jasa Dokumentasi Ulang Tahun</a>
+                    <li class="dropdown">        
+                        <a href="javascripct:void(0)" class="dropbtn">Jasa Video</a>
+                        <div class="dropdown-content">
+                            <a href="#">Jasa Video Dokumentasi Pernikahan</a>
+                            <a href="#">Video Cinematic </a>
+                    <li class="dropdown">        
+                        <a href="javascripct:void(0)" class="dropbtn">Layanan Lainya</a>
+                        <div class="dropdown-content">
+                            <a href="#">Penjualan Frame</a>
+                            <a href="#">Pencucian Foto</a>
+                            <a href="#">Pembuatan Kartu</a>
+                            <a href="#">Pembuatan Papan Nama</a>
+                        
                     <li><a href="jadwal.php">Portofolio</a></li>
                     <li><a href="ruangan.php">Team</a></li>
-                    <li><a href="logout.php">Info</a></li>
+                    <li class="dropdown">        
+                        <a href="javascripct:void(0)" class="dropbtn">Info</a>
+                        <div class="dropdown-content">
+                            <a href="#">Jasa Video Dokumentasi Pernikahan</a>
+                            <a href="#">Video Cinematic </a>
                 </ul>
             </nav>
         </header>
@@ -224,5 +256,16 @@ WhatsApp/Telp:
             },
         });
     </script>
+
+<script>
+    window.addEventListener('scroll', function() {
+        var nav = document.querySelector('nav.fixed-nav');
+        if (window.scrollY > 50) {
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+    });
+</script>
 </body>
 </html>
